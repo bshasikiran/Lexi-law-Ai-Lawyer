@@ -20,7 +20,7 @@ except Exception as e:
 # Initialize Gemini
 try:
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-    gemini_model = genai.GenerativeModel("gemini-flash-latest")
+    gemini_model = genai.GenerativeModel("gemini-3-flash-preview")
 except Exception as e:
     print(f"Gemini initialization error: {e}")
     gemini_model = None
